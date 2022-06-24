@@ -1,0 +1,48 @@
+$badgeInfo: #1ebccd;
+
+.badge {
+  background-color: #00acf0;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 15px;
+  padding: 5px 7px;
+  font-size: 72%;
+  letter-spacing: 0.3px;
+  vertical-align: middle;
+  display: inline-block;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.mn-r-5 {
+  margin-right: 5px;
+}
+
+.mn-l-5 {
+  margin-left: 5px;
+}
+
+.mn-r-10 {
+  margin-right: 10px;
+}
+
+.mn-l-10 {
+  margin-left: 10px;
+}
+
+.position-relative {
+  position: relative;
+}
+
+@mixin breakpoint($point) {
+  @if $point == md {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+  @if $point == xs {
+    @media (max-width: 370px) {
+      @content;
+    }
+  }
+}

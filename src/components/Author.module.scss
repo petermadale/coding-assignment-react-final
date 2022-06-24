@@ -1,0 +1,14 @@
+@import "../utilities.scss";
+
+.author {
+  width: 50%;
+  text-align: right;
+  @include breakpoint(xs) {
+    width: 100%;
+    text-align: left;
+  }
+  &__title {
+    @extend .badge, .mn-l-5;
+    background-color: $badgeInfo;
+  }
+}
